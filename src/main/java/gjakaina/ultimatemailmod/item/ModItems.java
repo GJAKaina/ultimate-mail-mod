@@ -10,15 +10,15 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item PINK_GARNET = registerItem(new Item(new Item.Settings()));
+    public static final Item LETTER = registerItem(new Item(new Item.Settings()));
 
     private static Item registerItem(Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(UltimateMailMod.MOD_ID, "pink_garnet"), item);
+        return Registry.register(Registries.ITEM, Identifier.of(UltimateMailMod.MOD_ID, "letter"), item);
     }
 
     public static void registerModItems() {
         UltimateMailMod.LOGGER.info("Registering Mod Items for " + UltimateMailMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.add(PINK_GARNET));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.add(LETTER));
     }
 }
