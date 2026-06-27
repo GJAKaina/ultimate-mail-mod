@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ultimate-mail-mod",
+	"version": "${version}",
+	"name": "Ultimate Mail Mod",
+	"description": "This is a mod adding mail and mail delivery!",
+	"authors": [
+		"GJAKaina"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC BY-NC-SA",
+	"icon": "assets/ultimate-mail-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gjakaina.ultimatemailmod.UltimateMailMod"
+		],
+		"fabric-datagen": [
+			"gjakaina.ultimatemailmod.UltimateMailModDataGenerator"
+		],
+		"client": [
+			"gjakaina.ultimatemailmod.UltimateMailModClient"
+		]
+	},
+	"mixins": [
+		"ultimate-mail-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
