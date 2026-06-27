@@ -1,5 +1,6 @@
 package gjakaina.ultimatemailmod;
 
+import gjakaina.ultimatemailmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -13,5 +14,6 @@ public class UltimateMailMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
