@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:chest, minecraft:paper"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ultimatemailmod.mail_storage_block"
+  }
+}
