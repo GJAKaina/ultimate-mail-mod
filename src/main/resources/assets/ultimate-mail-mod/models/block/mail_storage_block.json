@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ultimate-mail-mod:block/mail_storage_block"
+  }
+}

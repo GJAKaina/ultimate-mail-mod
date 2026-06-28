@@ -1,3 +1,5 @@
 {
-  "item.ultimatemailmod.letter": "Letter"
+  "item.ultimate-mail-mod.letter": "Letter",
+
+  "block.ultimate-mail-mod.mail_storage_block": "Mail Storage Block"
 }
