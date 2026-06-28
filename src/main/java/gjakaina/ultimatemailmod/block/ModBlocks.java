@@ -16,12 +16,12 @@ public class ModBlocks {
     public static final Block MAIL_STORAGE_BLOCK = registerBlock(
             new Block(AbstractBlock.Settings.create().strength(2.5F).sounds(BlockSoundGroup.WOOD).burnable()));
 
-    private static Block registerBlock(Block block) {
+    public static Block registerBlock(Block block) {
         registerBlockItem("mail_storage_block", block);
         return Registry.register(Registries.BLOCK, Identifier.of(UltimateMailMod.MOD_ID, "mail_storage_block"), block);
     }
 
-    private static void registerBlockItem(String name, Block block) {
+    public static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(UltimateMailMod.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
@@ -29,9 +29,7 @@ public class ModBlocks {
     public static void registerModBlocks() {
         UltimateMailMod.LOGGER.info("Registering Mod Blocks for " + UltimateMailMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
-            entries.add(ModBlocks.MAIL_STORAGE_BLOCK);
-        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.add(ModBlocks.MAIL_STORAGE_BLOCK));
     }
 
 }
