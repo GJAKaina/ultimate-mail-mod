@@ -1,6 +1,6 @@
 # Ultimate Mail Mod
 
-This will be merging with International Freight Mod, collaborating with Mabatogo. I will link the new repo here once it’s set up.
+This will be merging with International Freight Mod, collaborating with Mabatogo. [here is that repo](https://github.com/GJAKaina/International-Freight-Mod)
 
 ## Setup
 
